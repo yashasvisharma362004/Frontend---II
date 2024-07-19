@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(chalkpadimages/Chitkara_University_pic.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.box{
+    background-color: white;
+    width: 350px;
+    padding: 30px;
+    margin-top: 5%;
+    margin-left: 70%;
+    
+}
+.topimage{
+    position: relative;
+
+
+}
+
+.topimage img{
+    position: absolute;
+    left: 1760px;
+    z-index: 100;
+
+}
+.topcontainer{
+    border-top: 6px solid red;
+}
+.chitkaraimg{
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
+.phone_icons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.bold{
+    font-weight: 600;
+}

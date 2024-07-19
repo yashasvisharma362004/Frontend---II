@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Job Application Form</title>
+    <link rel="stylesheet" href="jobform.css">
 </head>
 <body>
-    <fieldset>
+
     <form action="">
         <h1>Job Application Form</h1>
+        <div class="box1">
         <label for="name">Name</label><br>
         <input type="text" id="name "placeholder = "First Name" maxlength="20"required></br>
         <input type="text"id="name"placeholder="Last Name"maxlength="20"required></form></br>
@@ -34,9 +36,11 @@
             <option value="+10">+10</option>
         </select>
         <input type="tel"id="ph no."placeholder ="(000)-000-0000"requiredmaxlength ="10"><br>
+        </fieldset>
+    </div>
 
         
-
+        <div class="box2">
         <h2>Skills</h2>
 
         <input type="checkbox" id="Full Stack">
@@ -68,9 +72,9 @@
         
         <label for="upload-resume">upload resume</label>
         <input type="file"id="upload-resume"required></fieldset><br>
+        </div>
 
 
     </form>
-    </fieldset>
 </body>
 </html>

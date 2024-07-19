@@ -1,0 +1,33 @@
+h1{
+    background-color: rgb(112,168,149);
+}
+/*universal selector*/
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+/* id selector*/
+#superheroes{
+    background-color: beige;
+}
+
+.s1{
+    color: aquamarine;
+    font-weight: 300;
+}
+
+h1{
+    margin: 10 20 30 40;
+    width: 70%;
+    border: 3px solid black;
+}
+
+input[type="text"]{
+    background-color: orchid;
+}
+
+p{
+    font-size: large;
+    font-style: italic;
+    
+}

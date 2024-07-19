@@ -4,11 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Appliaction</title>
+    <style>
+    
+        body{
+        
+            background-color: beige;
+
+        }
+        h2{
+            text-align: center;
+            margin: 20px;
+            font-style:italic;
+        }
+        button{
+            :hover background-color: aqua;
+        }
+        
+
+    </style>
 </head>
 <body>
     <form >
 
         <h2>Job Application </h2>
+        <div class="container">
         <label for="name">Name:</label>
         <input type="text" name="name" id="name">
     </br>
@@ -26,7 +45,8 @@
 </br>
 </br>
 <label for="counter">Experience(in years):</label>
-<input type="number" name="counter" id="counter" min="0" max="50" width="">
+<input type="number" name="counter" id="counter" min="0" max="50">
+</div>
 <fieldset>
     <legend>Skills:</legend>
     <label for="checkbox1">HTML</label>
@@ -60,7 +80,7 @@
 </br>
 <textarea name="comments" id="comments" rows="5" cols="20"></textarea>
 </br>
-<input type="submit" value="Submit Application">
+<input type="submit"Submit Application">
 
     </form>
 </body>
