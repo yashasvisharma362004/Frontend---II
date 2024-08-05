@@ -1,62 +1,90 @@
-*{
-    padding: 0;
+**{
     margin: 0;
-    box-sizing: border-box;
-}
-body{
-    height: 100vh;
-    width: 100vw;
-}
- h1{
-    font-size: 50px;
-    text-decoration: none;
-    padding-left: 150px;
-    background-color: brown;
-    width: 100vw;
-    height: 100px;
-    color: white;
-    padding-top: 12px;
-}
-a{
-    text-decoration: none;
+    padding: 0;
 }
 
-.Header{
-    margin: auto;
-    background-color: rgb(193, 159, 165);
-    border-radius: 10px;
-    height: 120px;
-    width: 90%;
-    padding-left: 15px;
-    padding-top: 20px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-.Header ,p{
-    font-size: 25px;
-}
-.container{
-    width: 90%;
-    margin: auto;
-    margin: 20 auto;
+#container{
+    width: 80vw;
+    margin: 20px auto; 
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    justify-content: space-between;
-    column-gap: 30px;
-    row-gap: 40px;
+    grid-auto-rows: 200px;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
 }
-.container div {
-    width: 100%;
-    height: 20vw;
-    
+
+div{
+    border-radius: 10px;
+    position: relative;
 }
-img {
+
+div img{
     width: 100%;
     height: 100%;
+    /* 1.border radius */
     border-radius: 10px;
+    transition: 200ms;
+    
 }
 
-img:hover {
-    background: rgba(34, 28, 28, 0.158);
+/* 2.hover effect: change image opacity*/
+
+div img:hover{
+    opacity: 0.5;
+    cursor: pointer;
+    filter: grayscale(80%);
+}
+
+/* nav styling: */
+ul{
+    list-style: none;
+}
+
+li{
+    padding: 10px;
+    margin-left: 50px;
+}
+
+i{
+ margin-right: 10px;
+}
+
+nav{
+    background-color: brown;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* icon over image: */
+div i{
+    position: absolute;
+    font-size: 3.4rem;
+    top: 40%;
+    left: 45%;
+    transform: scale(0);
+    transition: 300ms;
+    transition-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);;
+}
+
+div:hover i{
+    transform: scale(1.1);
+}
+
+/* heading css */
+#heading{
+   width: 77vw;
+   margin: 20px auto;
+   padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(239, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#heading h1{
+    color: rgb(22,22,141)
 }
